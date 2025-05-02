@@ -50,7 +50,7 @@ pipeline{
 
 			steps {
 				//sh 'docker run --name effulgencetech-node-cont-$BUILD_NUMBER -p 8082:8080 -d dainmusty/effulgencetech-nodejs-image:$BUILD_NUMBER'
-				sh 'docker run --name $CONTAINER_NAME-$BUILD_NUMBER -p 8089:8080 -d $IMAGE_REPO_NAME:$BUILD_NUMBER'
+				sh 'docker run --name $CONTAINER_NAME-$BUILD_NUMBER -p 8084:8080 -d $IMAGE_REPO_NAME:$BUILD_NUMBER'
 				sh 'docker ps'
 			}
 		}
